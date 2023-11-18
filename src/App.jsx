@@ -5,6 +5,7 @@ import { CurrentQuestion } from "./components/CurrentQuestion";
 import { AnswerOptions } from "./components/AnswerOptions";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
 import Summary from "./components/Summary";
+import Countdown from "./components/Countdown";
 
 export const App = () => {
   const quiz = useSelector((state) => state.quiz);
@@ -16,6 +17,7 @@ export const App = () => {
         <Summary />
       ) : (
         <>
+          <Countdown />
           <CurrentQuestion />
           <AnswerOptions />
         </>
