@@ -1,40 +1,46 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
 // Change these to your own questions!
 const questions = [
   {
     id: 1,
     questionText: "What is the rarest blood type among humans?",
     options: ["O-negative", "B-positive", "AB-negative", "O-positive"],
-    correctAnswerIndex: 2
+    correctAnswerIndex: 2,
+    image: "/src/assets/bloodCell.jpg"
   },
   {
     id: 2,
     questionText:
       "In what country did the first Starbucks open outside of North America?",
     options: ["Japan", "Germany", "China", "UK"],
-    correctAnswerIndex: 0
+    correctAnswerIndex: 0,
+    image: "/src/assets/starbucks.jpg"
   },
   {
     id: 3,
     questionText:
       "Where was the first example of paper money used?",
     options: ["Turkey", "Greece", "India", "China"],
-    correctAnswerIndex: 3
+    correctAnswerIndex: 3,
+    image: "/src/assets/currency.jpg"
   },
   {
     id: 4,
     questionText:
       "What city hosted the 2002 Olympic Games?",
     options: ["Tokyo", "Sydney", "Beijing", "Athens"],
-    correctAnswerIndex: 1
+    correctAnswerIndex: 1,
+    image: "/src/assets/olympics.jpg"
   },
   {
     id: 5,
     questionText:
       "Who is the world's biggest producer of oil?",
     options: ["Saudi Arabia", "Canada", "United States", "Russia"],
-    correctAnswerIndex: 2
+    correctAnswerIndex: 2,
+    image: "/src/assets/oilRig.jpg"
   }
 ];
 
