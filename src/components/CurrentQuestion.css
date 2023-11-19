@@ -2,3 +2,13 @@
   width: 80vw;
   margin: auto;
 }
+
+.question h2 {
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px;
+}

@@ -23,7 +23,7 @@ export const AnswerOptions = () => {
   const options = question.options.slice(0, 4);
 
   // array of letters for multiple choice
-  const letters = ["A. ", "B. ", "C. ", "D. "];
+  const letters = ["A", "B", "C", "D"];
 
   // function to save selected answer and hide color for correct/incorrect 
   const handleClick = (e) => {
@@ -59,24 +59,32 @@ export const AnswerOptions = () => {
   };
 
   return (
-    <div className="multiChoiceContainer">
-      {options.map((option, index) => (
-        <div key={index}>
-          <button
-            type="button"
-            className={answer.show && question.correctAnswerIndex === index ? "correct multiChoice" : "multiChoice"}
-            name={option}
-            value={index}
-            style={{ backgroundColor: answer.selected === index ? "pink" : null }}
-            onClick={handleClick}
-            disabled={isDisabled ? true : false}
-          >
-            {letters[index]}{option}
-          </button>
-        </div>
-      ))}
-      <button type="button" className="checkBtn" onClick={handleCheck} disabled={answer.selected != null ? false : true }>Check Answer</button>
-      <button type="button" className="nextBtn" onClick={handleNext} disabled={answer.selected != null ? false : true }>Next</button>
-    </div>
+    <>
+      <div className="multiChoiceContainer">
+        {options.map((option, index) => (
+          <div key={index} className="answerOption">
+            <button
+              type="button"
+              className={`${answer.show && question.correctAnswerIndex === index ? "correct" : ""} ${answer.selected === index ? "answerSelected" : ""} multiChoice`}
+              name={option}
+              value={index}
+              onClick={handleClick}
+              disabled={isDisabled ? true : false}
+            >
+              <span className="optionLetter">
+                {letters[index]}
+              </span>
+              <span className="answerText">
+                {option}
+              </span>
+            </button>
+          </div>
+        ))}
+      </div>
+      <div className="controlButtons">
+        <button type="button" className="checkBtn" onClick={handleCheck} disabled={answer.selected != null ? false : true }>Check Answer</button>
+        <button type="button" className="nextBtn" onClick={handleNext} disabled={answer.selected != null ? false : true }>Next</button>
+      </div>
+    </>
   );
 };

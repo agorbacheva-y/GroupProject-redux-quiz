@@ -12,11 +12,11 @@ export const CurrentQuestion = () => {
   }
 
   return (
-    <div>
-      <h1>
+    <div className="question">
+      <h2>
         Question {quiz.currentQuestionIndex}/{quiz.questions.length}:{" "}
         {question.questionText}
-      </h1>
+      </h2>
     </div>
   );
 };
