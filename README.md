@@ -6,9 +6,9 @@
 
 # Redux Quiz
 
-Replace this readme with your own information about your project.
+Technigo Week 8 Group Project Daniel Read, Michael Holm, Preeti Vadali, and Ayumi Gorbacheva-Yamamoto
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to create a multiple-choice quiz game using Redux.
 
 ## Getting Started with the Project
 
@@ -24,14 +24,19 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We started the project by building off of the boiler plate given. Quiz data (questions and multiple choices) were hard-coded but could be fetched from an API as a future sprint. 
+
+Additional keys were added to global state in the reducer in order to implement the timer. This project allowed us to practice determining the usage of global state with Redux or local state with useState.
+
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+<a href="https://technigo-wk8-redux-quiz.netlify.app/">
+  Deployed site
+</a>
 
 ## Instructions
 
 <a href="instructions.md">
    See instructions of this project
-  </a>
+</a>
