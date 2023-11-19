@@ -7,7 +7,7 @@ const questions = [
     questionText: "What is the rarest blood type among humans?",
     options: ["O-negative", "B-positive", "AB-negative", "O-positive"],
     correctAnswerIndex: 2,
-    image: "/src/assets/bloodCell.jpg"
+    image: "/bloodCell.jpg"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const questions = [
       "In what country did the first Starbucks open outside of North America?",
     options: ["Japan", "Germany", "China", "UK"],
     correctAnswerIndex: 0,
-    image: "/src/assets/starbucks.jpg"
+    image: "/starbucks.jpg"
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const questions = [
       "Where was the first example of paper money used?",
     options: ["Turkey", "Greece", "India", "China"],
     correctAnswerIndex: 3,
-    image: "/src/assets/currency.jpg"
+    image: "/currency.jpg"
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const questions = [
       "What city hosted the 2002 Olympic Games?",
     options: ["Tokyo", "Sydney", "Beijing", "Athens"],
     correctAnswerIndex: 1,
-    image: "/src/assets/olympics.jpg"
+    image: "/olympics.jpg"
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ const questions = [
       "Who is the world's biggest producer of oil?",
     options: ["Saudi Arabia", "Canada", "United States", "Russia"],
     correctAnswerIndex: 2,
-    image: "/src/assets/oilRig.jpg"
+    image: "/oilRig.jpg"
   }
 ];
 
