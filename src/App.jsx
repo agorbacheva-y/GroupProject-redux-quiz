@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import './App.css'
 
 import CurrentQuestion from "./components/CurrentQuestion";
 import AnswerOptions from "./components/AnswerOptions";
@@ -12,24 +13,26 @@ const App = () => {
   const quiz = useSelector((state) => state.quiz);
 
   return (
-    <>
-      <ProgressBar />
+    <div className="quizApp">
       {quiz.quizOver ? (
         <Summary />
       ) : (
         <>
           {quiz.quizStarted ? (
             <>
-              <Countdown />
               <CurrentQuestion />
+              <Countdown />
               <AnswerOptions />
+              <ProgressBar />
             </>
           ) : (
             <Intro />
           )}
         </>
       )}
-    </>
+
+
+    </div>
   );
 };
 

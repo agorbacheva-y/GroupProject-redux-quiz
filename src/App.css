@@ -1,0 +1,24 @@
+html {
+  background-color: #EDE8E3;
+}
+
+.quizApp {
+  margin-top: 20px;
+  background-color: #ede8e3;
+  position: relative;
+  width: 1440px;
+  font-family: Helvetica;
+}
+
+button {
+  border-radius: 8px;
+  background-color: #31CD63;
+  color: #F4F3F6;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 240px;
+  height: 60px;
+  margin: 10px;
+  cursor: pointer;
+}
